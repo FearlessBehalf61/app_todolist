@@ -5,7 +5,7 @@ import Header from './Header';
 import { useState } from 'react';
 
 function App() {
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem("todolist")));
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem("todolist")) || []);
 
   const [newItem, setNewItem] = useState('')
 
